@@ -1,3 +1,5 @@
+package br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes;
+
 import java.util.Objects;
 
 public class Diretor {
@@ -45,7 +47,7 @@ public class Diretor {
 
     @Override
     public String toString() {
-        return "Sobre o Diretor: " +
+        return "Sobre o br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Diretor: " +
                 "Nome:" + nome + '\'' +
                 ", Ano de Nascimento: " + anoNascimento;
     }

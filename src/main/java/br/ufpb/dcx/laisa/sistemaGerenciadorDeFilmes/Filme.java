@@ -1,3 +1,5 @@
+package br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes;
+
 import java.util.Objects;
 
 public class Filme {
@@ -81,7 +83,7 @@ public class Filme {
 
     @Override
     public String toString() {
-        return "Filme" +
+        return "br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Filme" +
                 "\nID:'" + id + '\'' +
                 "\nTÍTULO:" + titulo + '\'' +
                 "\nANO DE LANÇAMENTO:" + anoLancamento +

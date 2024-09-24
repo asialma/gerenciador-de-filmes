@@ -12,13 +12,15 @@ public class SistemaFilmesGUIV1 extends JFrame {
     JMenuBar barraDeMenu = new JMenuBar();
 
     public SistemaFilmesGUIV1(){
-        setTitle("LAÍSAFlix");
-        setSize(800, 600); //tamanho da janela
+        setTitle("MyFilmes");
+        setSize(800, 600);
         setLocation(150, 150);
         setResizable(false);
         setBackground(Color.white);
-        linha1 = new JLabel("Meu gerenciador de filmes", JLabel.CENTER);
-
+        linha1 = new JLabel("MyFilmes - Meu gerenciador de filmes", JLabel.CENTER);
+        linha1.setForeground(Color.red);
+        linha1.setFont(new Font("Serif", Font.BOLD, 24));
+        add(linha1);
     }
 
     public static void main(String[] args) {

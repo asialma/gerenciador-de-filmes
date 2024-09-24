@@ -11,7 +11,7 @@ import java.util.Map;
 public class SistemaFilmesMap implements SistemaFilmes {
     private Map<String, Filme> filmes;
 
-    public SistemaFilmesMap(Map<String, Filme> filmes) {
+    public SistemaFilmesMap() {
         this.filmes = new HashMap<>();
     }
 

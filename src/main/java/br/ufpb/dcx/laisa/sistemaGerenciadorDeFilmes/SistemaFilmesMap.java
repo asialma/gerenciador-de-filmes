@@ -1,7 +1,7 @@
 package br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes;
 
-import br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Exceptions.FilmeJaCadastradoException;
-import br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Exceptions.FilmeNaoExisteException;
+import br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.exceptions.FilmeJaCadastradoException;
+import br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.exceptions.FilmeNaoExisteException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,7 +17,7 @@ public class SistemaFilmesMap implements SistemaFilmes {
 
     public void cadastrarFilme(String id, String titulo, int anoLancamento, CategoriaDeFilmes categoria, Diretor diretor) throws FilmeJaCadastradoException {
         if (filmes.containsKey(id)) {
-            throw new FilmeJaCadastradoException("br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Filme já cadastrado com o ID: " + id);
+            throw new FilmeJaCadastradoException("Filme já cadastrado com o ID: " + id);
         }
 
         Filme novoFilme = new Filme(id, titulo, anoLancamento, categoria, diretor);
@@ -27,7 +27,7 @@ public class SistemaFilmesMap implements SistemaFilmes {
     @Override
     public void removerFilmeDaLista(String id) throws FilmeNaoExisteException {
         if (!filmes.containsKey(id)) {
-            throw new FilmeNaoExisteException("br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Filme com o ID " + id + " não existe.");
+            throw new FilmeNaoExisteException("Filme com o ID " + id + " não existe.");
         }
 
         filmes.remove(id);

@@ -1,6 +1,6 @@
 package br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes;
-import br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Exceptions.FilmeJaCadastradoException;
-import br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Exceptions.FilmeNaoExisteException;
+import br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.exceptions.FilmeJaCadastradoException;
+import br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.exceptions.FilmeNaoExisteException;
 
 import java.util.List;
 

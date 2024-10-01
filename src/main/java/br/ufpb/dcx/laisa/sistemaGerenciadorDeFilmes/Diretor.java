@@ -47,8 +47,7 @@ public class Diretor {
 
     @Override
     public String toString() {
-        return "Sobre o br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Diretor: " +
-                "Nome:" + nome + '\'' +
+        return nome + '\'' +
                 ", Ano de Nascimento: " + anoNascimento;
     }
 }

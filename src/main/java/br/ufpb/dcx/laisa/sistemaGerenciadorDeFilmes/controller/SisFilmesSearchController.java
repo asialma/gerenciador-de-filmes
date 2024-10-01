@@ -30,7 +30,7 @@ public class SisFilmesSearchController implements ActionListener {
                     "Filme encontrado:" + filmePesquisado);
         } else {
             JOptionPane.showMessageDialog(janela,
-                    "Não foi encontrado nenhum aniversariante nesta data");
+                    "Filme não encontrado!");
         }
     }
 }

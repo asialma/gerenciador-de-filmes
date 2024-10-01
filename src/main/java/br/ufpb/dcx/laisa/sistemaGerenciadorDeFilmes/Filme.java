@@ -83,12 +83,11 @@ public class Filme {
 
     @Override
     public String toString() {
-        return "br.ufpb.dcx.laisa.sistemaGerenciadorDeFilmes.Filme" +
-                "\nID:'" + id + '\'' +
+        return "Filme:" +
+                "\nID:" + id + '\'' +
                 "\nTÍTULO:" + titulo + '\'' +
                 "\nANO DE LANÇAMENTO:" + anoLancamento +
                 "\nCATEGORIA:" + categoria +
-                "\nDIRETOR: " + diretor +
-                '}';
+                "\nDIRETOR: " + diretor;
     }
 }

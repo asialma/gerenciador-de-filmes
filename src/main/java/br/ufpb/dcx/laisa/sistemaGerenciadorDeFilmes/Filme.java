@@ -6,10 +6,10 @@ public class Filme {
     private String id;
     private String titulo;
     private int anoLancamento;
-    private CategoriaDeFilmes categoria;
+    private String categoria;
     private Diretor diretor;
 
-    public Filme(String id, String titulo, int anoLancamento, CategoriaDeFilmes categoria, Diretor diretor) {
+    public Filme(String id, String titulo, int anoLancamento, String categoria, Diretor diretor) {
         this.id = id;
         this.titulo = titulo;
         this.anoLancamento = anoLancamento;
@@ -41,11 +41,11 @@ public class Filme {
         this.anoLancamento = anoLancamento;
     }
 
-    public CategoriaDeFilmes getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(CategoriaDeFilmes categoria) {
+    public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
 

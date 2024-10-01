@@ -15,11 +15,10 @@ public class SistemaFilmesMap implements SistemaFilmes {
         this.filmes = new HashMap<>();
     }
 
-    public void cadastrarFilme(String id, String titulo, int anoLancamento, CategoriaDeFilmes categoria, Diretor diretor) throws FilmeJaCadastradoException {
+    public void cadastrarFilme(String id, String titulo, int anoLancamento, String categoria, Diretor diretor) throws FilmeJaCadastradoException {
         if (filmes.containsKey(id)) {
             throw new FilmeJaCadastradoException("Filme já cadastrado com o ID: " + id);
         }
-
         Filme novoFilme = new Filme(id, titulo, anoLancamento, categoria, diretor);
         filmes.put(id, novoFilme);
     }

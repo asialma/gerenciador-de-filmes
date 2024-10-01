@@ -12,24 +12,24 @@ import java.util.Collection;
 
 public class SisFilmesSearchController implements ActionListener {
     private SistemaFilmesMap sistemaFilmes;
-    private JFrame jframe;
+    private JFrame janela;
 
-    public SisFilmesSearchController(SistemaFilmesMap sistemaFilmes, JFrame jframe) {
+    public SisFilmesSearchController(SistemaFilmesMap sistemaFilmes, JFrame janela) {
         this.sistemaFilmes = sistemaFilmes;
-        this.jframe = jframe;
+        this.janela = janela;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String id = JOptionPane.showInputDialog(jframe,
+        String id = JOptionPane.showInputDialog(janela,
                 "Qual o id do filme para pesquisar?");
 
-        Filme filmesPesquisado = sistemaFilmes.pesquisarFilmePeloID(id);
-        if (filmesPesquisado.getId().equals(id)){
-            JOptionPane.showMessageDialog(jframe,
-                    "Filme encontrado:" + filmesPesquisado);
+        Filme filmePesquisado = sistemaFilmes.pesquisarFilmePeloID(id);
+        if (filmePesquisado != null){
+            JOptionPane.showMessageDialog(janela,
+                    "Filme encontrado:" + filmePesquisado);
         } else {
-            JOptionPane.showMessageDialog(jframe,
+            JOptionPane.showMessageDialog(janela,
                     "Não foi encontrado nenhum aniversariante nesta data");
         }
     }
